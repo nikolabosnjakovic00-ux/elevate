@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEVATE | Modern & Inclusive Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Dynamic Alert Banner -->
+    <div class="promo-banner">
+        Free worldwide shipping on orders over €150 • Elevate Your Everyday
+    </div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <div class="menu-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+            <div class="logo" onclick="navigateTo('home')">ELEVATE</div>
+            
+            <nav id="nav-menu">
+                <span class="close-menu" id="close-menu-btn">&times;</span>
+                <a href="#" onclick="navigateTo('men')">Men</a>
+                <a href="#" onclick="navigateTo('women')">Women</a>
+                <a href="#" onclick="navigateTo('kids')">Kids</a>
+                <a href="#" onclick="navigateTo('collections')">Collections</a>
+                <a href="#" onclick="navigateTo('sales')">Sales</a>
+                <a href="#" onclick="navigateTo('info')">Our Story</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" onclick="navigateTo('auth')" class="nav-icon-link"><i class="fa-regular fa-user"></i> <span class="nav-text">Sign In</span></a>
+                <a href="#" onclick="navigateTo('cart')" class="nav-icon-link relative">
+                    <i class="fa-solid fa-bag-shopping"></i> 
+                    <span class="nav-text">Bag</span>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN DYNAMIC CONTENT CONTAINER -->
+    <main id="main-content">
+        <!-- Views will be dynamically injected here via app.js -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>ELEVATE</h3>
+                <p>Redefining modern fashion architecture across generations.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#" onclick="navigateTo('men')">Men's Edition</a></li>
+                    <li><a href="#" onclick="navigateTo('women')">Women's Edition</a></li>
+                    <li><a href="#" onclick="navigateTo('kids')">Kids Studio</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 1024 Aesthetics Blvd, Suite 400</p>
+                <p><i class="fa-solid fa-envelope"></i> studio@elevate-apparel.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (555) 019-2831</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 ELEVATE Studio. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
